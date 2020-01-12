@@ -20,6 +20,7 @@ pub fn parse_unstable_flag(value: Option<&str>) -> Vec<String> {
         crates.insert("core");
         crates.insert("alloc");
         crates.insert("proc_macro");
+        crates.insert("panic_abort");
         crates.insert("panic_unwind");
         crates.insert("compiler_builtins");
     } else if crates.contains("core") {
